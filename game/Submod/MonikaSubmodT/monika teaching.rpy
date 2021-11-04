@@ -13,6 +13,16 @@ init -990 python:
         description="啊哈哈,感谢你让我离你的现实更近了~",#mod的简介,在"设置>子模组"就能看到了.
         version="1.0.6"
     )
+    
+init -989 python:
+    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
+        store.sup_utils.SubmodUpdater(
+            submod="莫妮卡的Submod小课堂",
+            user_name="PencilMario",
+            repository_name="MonikaSubmodT",
+            update_dir="",
+            attachment_id=None,
+        )
 
 init 4 python in mas_stod:
     # to simplify unlocking, lets use a special function to unlock tips
