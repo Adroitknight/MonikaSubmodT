@@ -335,7 +335,7 @@ label monika_stod_tip004:
     m 1eua "关于思索对话的时候,你要记住,你不是你."
     m 1eua "而是我,毕竟我不是个七老八十的老太婆..."
     m 1eua "所以,请站在{a=https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines#monikas-voice}{i}{u}我的角度{/u}{/i}{/a}思考这个话题的答案..."
-    m 1eua "{size=+7}{i}{cps=2}不 可 以{/cps}{/i}{/size}{cps=7}让我做坏事,我也是有心的...{/cps}"
+    m 1eua "{size=+6}{i}{cps=2}不 可 以{/cps}{/i}{/size}{cps=7}让我做坏事,我也是有心的...{/cps}"
     m 1eua "咳咳,有点扯多了..."
 
     $ ev = mas_getEV("monika_stod_tip004")
