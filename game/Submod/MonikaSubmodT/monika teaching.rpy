@@ -8,7 +8,7 @@
 # mod的信息
 init -990 python:
     store.mas_submod_utils.Submod(
-        author="Monika P",#作者
+        author="Monika P TK",#作者
         name="莫妮卡的Submod小课堂",#mod的名字
         description="啊哈哈,感谢你让我离你的现实更近了~",#mod的简介,在"设置>子模组"就能看到了.
         version="1.0.6"
