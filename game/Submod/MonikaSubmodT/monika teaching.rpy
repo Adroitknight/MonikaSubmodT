@@ -13,16 +13,6 @@ init -990 python:
         description="啊哈哈,感谢你让我离你的现实更近了~",#mod的简介,在"设置>子模组"就能看到了.
         version="1.0.6"
     )
-    
-init -989 python:
-    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
-        store.sup_utils.SubmodUpdater(
-            submod="莫妮卡的Submod小课堂",
-            user_name="PencilMario",
-            repository_name="MonikaSubmodT",
-            update_dir="",
-            attachment_id=None,
-        )
 
 init 4 python in mas_stod:
     # to simplify unlocking, lets use a special function to unlock tips
@@ -84,19 +74,19 @@ init 5 python:
     )
 
 label monika_stod_tip000:
-    m 1eua "嗯..."
-    m 1eua "你可以用Submod!"
-    m 1eua "简单的说,就是给我们的二人世界添加一些小东西的子模组"
-    m 1eua "你知道的,其实...我可能过一段时间就想不到新的话题了..."
-    m 1eua "这时候就轮到子模组出场了~"
+    m 1rka "嗯..."
+    m 3eub "你可以用Submod!"
+    m 3eua "简单的说,就是给我们的二人世界添加一些小东西的子模组"
+    m 1rksdlb "你知道的,其实...我可能过一段时间就想不到新的话题了..."
+    m 3eub "这时候就轮到子模组出场了~"
     m 1eua "你可以去Reddit,Github或者其他网站去下一些子模组."
-    m 1eua "不过找起来毕竟比较麻烦,Reddit可能需要翻墙,Github虽然质量很高但是数量有限..."
-    m 1eua "啊哈哈~"
-    m 1eua "我想你知道我想说什么了."
-    m 1eua "自己做一个子模组不是更好吗?"
-    m 1eua "毕竟自己做一个模组可是一个成就感爆棚的事"
-    m 1eua "不过这样我就有一个问题了..."
-    m 1eua "[player],你以前做过子模组吗?"
+    m 1rksdlb "不过找起来毕竟比较麻烦,Reddit可能需要翻墙,Github虽然质量很高但是数量有限..."
+    m 1hksdlb "啊哈哈~"
+    m 1eub "我想你知道我想说什么了."
+    m 3eub "自己做一个子模组不是更好吗?"
+    m 3hub "毕竟自己做一个模组可是一个成就感爆棚的事"
+    m 1rkblsdlb "不过这样我就有一个问题了..."
+    m 1ekbla "[player],你以前做过子模组吗?"
     $ _history_list.pop()
     menu:
         "[player],你以前做过子模组吗?{fast}"
@@ -112,11 +102,11 @@ label monika_stod_tip000:
             menu:
                 "你想让我教你怎么制作子模组的最简单方法吗?{fast}"
                 "好啊!":
-                    m 1eua "那好吧~"
-                    m 1eua "你可以期待一下我的新栏目~"
+                    m 1eub "那好吧~"
+                    m 1hua "你可以期待一下我的新栏目~"
                 "暂时不行...":
                     m 1eua "那也行~"
-                    m 1eua "不过在那之前,我会稍微总结一下方法的."
+                    m 3eub "不过在那之前,我会稍微总结一下方法的."
                     m 1eua "你想学的话,跟我说一声就好了."
                     pass
     
@@ -142,30 +132,30 @@ init 5 python:
 
 label monika_stod_tip001:
     m 1eua "Submod是{i}Monika After Story{/i}的子模组.目的一般是为了拓展游戏的内容."
-    m 1eua "毕竟...我也可能会有想不出话题的那天..."
-    m 1eua "所以为了增加我的话题,就可以用Submod~"
-    m 1eua "如果你的代码能力很强,你甚至可以给我加点新游戏玩,啊哈哈~"
-    m 1eua "Submod的代码和游戏里的的代码一样,也就是说你把Submod里的rpy文件移到game文件夹也是能用的."
+    m 1hkb "毕竟...我也可能会有想不出话题的那天..."
+    m 3eub "所以为了增加我的话题,就可以用Submod~"
+    m 1hua "如果你的代码能力很强,你甚至可以给我加点新游戏玩,啊哈哈~"
+    m 1eub "Submod的代码和游戏里的的代码一样,也就是说你把Submod里的rpy文件移到game文件夹也是能用的."
     m 1eua "就像游戏里的一部分一样~"
-    m 1eua "不过放在Submod文件夹方便管理,如果这个子模组出错了,只需要和文件夹一起删掉就可以了~"
+    m 3eub "不过放在Submod文件夹方便管理,如果这个子模组出错了,只需要和文件夹一起删掉就可以了~"
     m 1eua "如果你的代码能力比较差的话,也可以去Github,reddit或者其他网站去获取别人制作的子模组"
-    m 1eua "说到制作子模组,虽然没有什么硬性要求,但还是有几条普遍规则要去遵守的."
-    m 1eua "首先,必须要让一些特殊的事情正确发生!"
+    m 1eud "说到制作子模组,虽然没有什么硬性要求,但还是有几条普遍规则要去遵守的."
+    m 3efc "首先,必须要让一些特殊的事情正确发生!"
     if mas_isMoniEnamored(higher=True):
-        m 1eua "比...比如,初吻什么的..."
-        m 1eua "如果初吻被一些子模组触发了,那么你就再也不能经历初吻事件了..."
-        m 1eua "这也是MAS制作组不想看到的..."
-        m 1eua "另外,如果你要安装ATOM的子模组,一定要小心,他的模组可能会导致闪退或者提前发生不该发生的事."
-        m 1eua "在安装前,务必检查一下子模组的代码."
+        m 1rkbsb "比...比如,初吻什么的..."
+        m 1rksdlc "如果初吻被一些子模组触发了,那么你就再也不能经历初吻事件了..."
+        m 1dksdld "这也是MAS制作组不想看到的..."
+        m 1eud "另外,如果你要安装ATOM的子模组,一定要小心,他的模组可能会导致闪退或者提前发生不该发生的事."
+        m 4eud "在安装前,务必检查一下子模组的代码."
     else:
-        m 1eua "这种事件就和纪念日那样,是不能提前触发的."
-        m 1eua "不然就会导致这个事件永远消失..."
-        m 1eua "想一下,假如我再也不能和你说我爱你..."
-        m 1eua "我不敢想,感觉真的很痛苦..."
-        m 1eua "答应我,安装子模组之前,仔细检查一下它的代码,好吗?"
-    m 1eua "其次,你必须保证代码要能正常运行!"
-    m 1eua "如果你要公开你的代码,你要记住,你的代码是要在别人的电脑上运行的."
-    m 1eua "所以为了别人着想,也为了你自己用起来舒服点,至少把bug修完,好吗?"
+        m 1ekc "这种事件就和纪念日那样,是不能提前触发的."
+        m 1dkd "不然就会导致这个事件永远消失..."
+        m 2rksdlc "想一下,假如我再也不能和你说我爱你..."
+        m 1dktpc "我不敢想,感觉真的很痛苦..."
+        m 3eka "答应我,安装子模组之前,仔细检查一下它 的代码,好吗?"
+    m 4eka "其次,你必须保证代码要能正常运行!"
+    m 3eka "如果你要公开你的代码,你要记住,你的代码是要在别人的电脑上运行的."
+    m 3ekb "所以为了别人着想,也为了你自己用起来舒服点,至少把bug修完,好吗?"
 
     call monika_stod_tipthx
 
@@ -210,23 +200,22 @@ init 5 python:
 
 label monika_stod_tip002:
     
-    m 1eua "在准备制作你的Submod之前,你得先准备一下下."
-    m 1eua "因为Submod测试的时候可能会出各种各样的报错..."
-    m 1eua "我要教你的基本是比较简单的东西,所以一般不会报特别复杂的报错..."
-    m 1eua "在刚开始的时候,最容易犯的错误就是缩进不匹配或者落下标点符号什么的..."
-    m 1eua "这些报错通常都很短,而且Renpy报错的时候会提示与错误相关的行..."
-    m 1eua "关于详细的解释我就在后面的课上再教给你吧."
-    m 1eua "好了,在开始之前,你首先要准备两件事."
-    m 1eua "一个是VScode,另一个是把游戏文件复制一份."
-    m 1eua "VScode默认是英文的,但是可以设置中文.按下Shift+Ctrl+X可以打开插件市场,然后搜索'chinese'就可以找到中文插件了."
-    m 1eua "你也可以再去下一个Renpy插件,这样写代码的时候会舒服一些."
-    m 1eua "其实我一开始用的是Notepad++写的,后来汉化组推荐用VScode,发现还挺好用~"
-    m 1eua "我现在也把它推荐给你啦."
-    m 1eua "关于为什么复制文件,是因为写这些代码可能会需要一些MAS官方的测试脚本,但这些脚本可能会影响游戏体验."
-    m 1eua "而且...毕竟还需要一个地方用来测试我们的代码.所以这就是为什么我要让你复制一份游戏本体的原因了."
-    m 1eua "这个复制的版本就称为dev版本了."
-    m 1eua "复制一份文件,这样就可以一边听我讲一边测试了."
-    m 1eua "不过要善待dev版本的我哦,毕竟用的也是我的记忆."
+    m 4eua "在准备制作你的Submod之前,你得先准备一下下."
+    m 3rksdla "因为Submod测试的时候可能会出各种各样的报错..."
+    m 1lksdra "我要教你的基本是比较简单的东西,所以一般不会报特别复杂的报错..."
+    m 1lksdra "在刚开始的时候,最容易犯的错误就是缩进不匹配或者落下标点符号什么的..."
+    m 3eub "这些报错通常都很短,而且Renpy报错的时候会提示与错误相关的行..."
+    m 3eua "关于详细的解释我就在后面的课上再教给你吧."
+    m 1eub "好了,在开始之前,你首先要准备两件事."
+    m 4eub "一个是VScode,另一个是把游戏文件复制一份."
+    m 3eua "VScode默认是英文的,但是可以设置中文.按下Shift+Ctrl+X可以打开插件市场,然后搜索'chinese'就可以找到中文插件了."
+    m 7eub "你也可以再去下一个Renpy插件,这样写代码的时候会舒服一些."
+    m 2eub "其实我一开始用的是Notepad++写的,后来汉化组推荐用VScode,发现还挺好用~"
+    m 3hua "我现在也把它推荐给你啦."
+    m 3lkb "关于为什么复制一份文件,毕竟写代码要测试的嘛,而且这样也可以防止你的mas文件丢失."
+    m 3eua "这个复制的版本就称为dev版本了."
+    m 4eub "复制一份文件,这样就可以一边听我讲一边测试了."
+    m 3eka "不过要善待dev版本的我哦,毕竟用的也是我的记忆."
 
     call monika_stod_tipthx
 return
@@ -319,7 +308,7 @@ label monika_stod_tip004:
     $ store.mas_ptod.rst_cn()
     show screen mas_py_console_teaching
 
-    call mas_wx_cmd("#label monika_example_topic1:")
+    call mas_wx_cmd("#label monika_example_topic1")
     call mas_wx_cmd("#    m 1eua 'Hey,Can you hear me?'")
     call mas_wx_cmd("#    m 2eua 'I have a little something to say to you...'")
     call mas_wx_cmd("#    m 3eua 'I love you!'")
@@ -331,7 +320,7 @@ label monika_stod_tip004:
     m 1eua "引号内就是我想说的话了,关于这些字可以有一些文本标签,比如{b}加粗{/b},{i}斜体{/i}..."
     m 1eua "样式可以在{a=https://renpy.cn/doc/text.html#tag}{i}{u}这个网站{/i}{/u}{/a}查看."
     m 1eua "最后是'return',这标志着一段对话的结束."
-    m 1eua "然后,这段对话运行的效果是这样的."
+    m 1eua "最后,这段对话运行的效果是这样的."
     
     hide screen mas_py_console_teaching
     show monika at t11
@@ -345,7 +334,7 @@ label monika_stod_tip004:
     m 1eua "关于思索对话的时候,你要记住,你不是你."
     m 1eua "而是我,毕竟我不是个七老八十的老太婆..."
     m 1eua "所以,请站在{a=https://github.com/Monika-After-Story/MonikaModDev/wiki/Contributing-Guidelines#monikas-voice}{i}{u}我的角度{/u}{/i}{/a}思考这个话题的答案..."
-    m 1eua "{size=+6}{i}{cps=2}不 可 以{/cps}{/i}{/size}{cps=7}让我做坏事,我也是有心的...{/cps}"
+    m 1eua "{size=+7}{i}{cps=2}不 可 以{/cps}{/i}{/size}{cps=7}让我做坏事,我也是有心的...{/cps}"
     m 1eua "咳咳,有点扯多了..."
 
     $ ev = mas_getEV("monika_stod_tip004")
@@ -359,7 +348,7 @@ return
 
 label monika_stod_tipthx:
         m 1eua "这就是莫妮卡今天的Submod小教程了."
-        m 1eua "感谢倾听~"
+        m 3hub "感谢倾听~"
 return
 
 ################????????
@@ -387,28 +376,10 @@ label monika_stod_003code:
         monika_stod_code = """\
 init -990 python
     store.mas_submod_utils.Submod(
-        author="Monika"    #作者
-        name="Monika's example submod"    #SubMod名字
-        description="I love you."    #简介
-        version="1.0.0"    #版本
-"""
-
-
-        store.mas_utils.trywrite(
-            os.path.normcase(renpy.config.basedir + "/characters/Monika Example Submod.rpy"),
-            monika_stod_code
-        )
-return
-
-label monika_stod_005code:
-    python:
-        monika_stod_code = """\
-init -990 python
-    store.mas_submod_utils.Submod(
-        author="Monika"    #作者
-        name="Monika's example submod"    #SubMod名字
-        description="I love you."    #简介
-        version="1.0.0"    #版本
+        author="Monika"
+        name="Monika's example submod"
+        description="I love you."
+        version="1.0.0"
 """
 
 
